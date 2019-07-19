@@ -397,5 +397,16 @@ public class TxtTable
 		{
 			return this.getKey().compareTo(((Row)to).getKey());
 		}
+
+		@Override
+		public String toString() {
+			return "Row{" +
+					"key=" + key +
+					", content='" + content + '\'' +
+					", lineNo=" + lineNo +
+					", elements=" + elements +
+					", table=" + table +
+					'}';
+		}
 	}
 }

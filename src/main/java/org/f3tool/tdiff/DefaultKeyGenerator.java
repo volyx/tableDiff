@@ -13,7 +13,7 @@ public class DefaultKeyGenerator implements KeyGenerator
 		
 		for (ComparisonConfig.Field fld: primaryFields)
 		{
-			sb.append(table.getFieldValue(row, fld.getName()).toString());
+			sb.append(table.getFieldValue(row, fld.getName()));
 		}
 		
 		return sb.toString();

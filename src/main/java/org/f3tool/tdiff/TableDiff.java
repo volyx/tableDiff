@@ -121,7 +121,7 @@ class TableDiff
 		}
 	}
 	
-	private static String removeFileExtention(String fileName)
+	public static String removeFileExtention(String fileName)
 	{
 		int pos = fileName.indexOf('.');
 		
